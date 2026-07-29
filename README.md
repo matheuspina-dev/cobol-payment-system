@@ -48,6 +48,41 @@ Transactions (`TRANSACTIONS.TXT`):
 000003,DEBIT,99999
 ```
 
+## Sample output
+
+With the sample input above, the `output/` directory will contain:
+
+`APPROVED.TXT`:
+
+```
+APPROVED: 000001 NEW BALANCE: 000000800
+APPROVED: 000002 NEW BALANCE: 000000800
+```
+
+`REJECTED.TXT`:
+
+```
+REJECTED: 000003 REASON: EXCEEDS MAX DEBIT
+REJECTED: 000004 REASON: ACCOUNT NOT FOUND
+REJECTED: 000002 REASON: INVALID TRANSACTION TYPE
+```
+
+`ACCOUNTS-UPDATED.TXT`:
+
+```
+000001,000000800
+000002,000000800
+000003,000000050
+```
+
+`REPORT.TXT`:
+
+```
+TOTAL TRANSACTIONS: 000005
+TOTAL APPROVED:     000002
+TOTAL REJECTED:     000003
+```
+
 ## Configuration (`data/CONFIG.TXT`)
 
 ```
@@ -93,6 +128,7 @@ Or use the provided helper scripts:
 
 ```bash
 # Linux / macOS
+chmod +x scripts/run.sh
 ./scripts/run.sh
 
 # Windows
