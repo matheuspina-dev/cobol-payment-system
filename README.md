@@ -90,10 +90,10 @@ MAX_DEBIT=500
 ALLOW_CREDIT=Y
 ```
 
-| Parameter    | Type            | Description                                    |
-| ------------ | --------------- | ---------------------------------------------- |
-| `MAX_DEBIT`  | Numeric         | Maximum amount allowed for a single debit.     |
-| `ALLOW_CREDIT` | `Y` or `N`     | Global switch for credit transactions.       |
+| Parameter      | Type       | Description                                |
+| -------------- | ---------- | ------------------------------------------ |
+| `MAX_DEBIT`    | Numeric    | Maximum amount allowed for a single debit. |
+| `ALLOW_CREDIT` | `Y` or `N` | Global switch for credit transactions.     |
 
 ## Getting started
 
