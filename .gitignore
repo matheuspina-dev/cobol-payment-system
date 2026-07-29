@@ -1,0 +1,17 @@
+# Build artifacts
+*.exe
+*.EXE
+*.o
+*.obj
+PAYMENTPROC
+
+# Generated outputs
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
